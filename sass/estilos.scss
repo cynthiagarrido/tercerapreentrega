@@ -1,0 +1,210 @@
+@import "variableGlobal";
+@import "generales"; 
+@import "titulos";
+@import "operaciones";
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48.5%;
+}
+.formulario {
+    background-image: url("../media/fondoformulario.jpg");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.color {
+    background-color:$color;
+}
+.presentacion {
+    font-size: medium;
+}
+img {
+    padding: 1em;
+    margin: 1em;
+    width: 200px;
+    height: 190px;
+}
+
+h2,h3 {
+    color: black;
+    padding: 8px;
+    margin: 8px;
+}
+
+.volver-arriba,.enlace-interno {
+    font-size: medium;
+}
+.bienve, .parrafoindex{
+    background-color: pink;
+}
+
+.mapa {
+    height: 400px;
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+/*declaro areas*/
+header-servicios {
+    grid-area: header;
+}
+
+nav-servicios {
+    grid-area: nav;
+}
+
+.contenido-servicios {
+    grid-area: contenido;
+}
+
+.galeria-grid {
+    grid-area: galeriagrid;
+}
+
+.lista-servicios {
+    grid-area: lista;
+}
+
+footer-servicios {
+    grid-area: footer;
+}
+
+/*empiezo con mi grilla general*/
+.envoltura-servicios {
+    gap: 20px;
+    display: grid;
+    grid-template-areas: "header""nav""contenido""galeriagrid""lista""footer";
+}
+
+@media (min-width: 599px) {
+    .envoltura {
+        display: grid;
+        grid-template-areas:
+            "header                 header"
+            "nav                    nav"
+            "contenido              contenido"
+            "galeriagrid           	galeriagrid"
+            "galeriagrid       	    galeriagrid"
+            "lista		            lista"
+            "lista		        	lista"
+            "footer                 footer";
+        grid-template-columns: 1fr 1fr;
+    }
+
+html {
+    font-size: 58.5%;
+}
+body{
+    background-image: url("../media/fotomia.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1 {
+    padding: 8px;
+    margin: 8px;
+}
+.bienve{
+    font-size: medium;
+}
+img {
+    width: 300px;
+    height: 250px;
+} 
+}
+
+@media (min-width: 950px) {
+    .envoltura {
+        display: grid;
+        margin-bottom: 1.5;
+        grid-template-areas:
+        "header               header		header"
+        "nav                  nav		    nav"
+        "contenido            contenido	    contenido"
+        "galeriagrid          galeriagrid	galeriagrid"
+        "lista		          lista		    lista"
+        "footer               footer		footer";
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    img {
+        width:700px;
+        height: 500px
+    }
+    img: :hover{
+        transition-property:all 4s
+    }
+
+    .servicios {
+        display: grid;
+        grid-template-columns: 50px 50px;
+    }
+    body{
+        background-image: url('../media/dermaplaning.jpg');
+    }
+    .video{
+        width: 900px;
+        height: 700px;
+    }
+    
+    footer {
+        margin-top: 1.5;
+        opacity: 0.5;
+    }
+    
+    h1 {
+        font-size: 7em;
+        padding: 10px;
+        margin: 25px;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+        padding: 8px;
+        margin: 20px;
+    }
+    
+    h3 {
+        color: black;
+        font-size: 3;
+        padding-top: 60px;
+        margin: 35;
+    }
+    
+    h4 {
+        font-size: 5.3;
+        color: black;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    p {
+        font-size: 5.5;
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .abajovideo {
+        size: 3.5em;
+        padding-top: 50px;
+        padding-left: 300px;
+        padding-right: 300px;
+        padding-bottom: 5px;
+    }
+    
+    .video {
+        width: 1000px;
+        height: 700px;
+        padding-left: 300px;
+        padding-right: 300px;
+        padding-bottom: 200px;
+    }
+    .mapa{
+        width:1000px;
+        height: 700px;
+        padding: 3em;
+        margin: 3em;
+    }
+}

@@ -1,0 +1,11 @@
+/*extend*/
+.presentacion{
+    border-radius: 2px;
+    transition: all;
+}
+
+.volver-arriba{
+    @extend .presentacion;
+    background-color: brown;
+    }
+

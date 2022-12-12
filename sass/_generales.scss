@@ -1,0 +1,45 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+footer {
+    size: 100%;
+    background-color: $color;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+body {
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../media/mia.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    font-size: medium;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
